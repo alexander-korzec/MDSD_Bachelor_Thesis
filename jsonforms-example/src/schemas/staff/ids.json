@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+        "staff_id_1": {
+            "title": "Staff-ID 1",
+            "type": "number"
+        },
+        "staff_id_2": {
+            "title": "Staff-ID 2",
+            "type": "number"
+        }
+    }
+}

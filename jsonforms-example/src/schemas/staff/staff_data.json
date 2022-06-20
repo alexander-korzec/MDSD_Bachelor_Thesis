@@ -1,0 +1,34 @@
+{
+    "type": "object",
+    "properties": {
+        "lastname": {
+            "title": "Last name",
+            "type": "string"
+        },
+        "firstnames": {
+            "title": "First name(s)",
+            "type": "string"
+        },
+        "form_of_address": {
+            "title": "Form of address",
+            "type": "string"
+        },
+        "title_": {
+            "title": "Title",
+            "type": "string"
+        },
+        "birth_date": {
+            "title": "Birth date",
+            "type": "string",
+            "format": "date"
+        },
+        "nationality": {
+            "title": "Nationality",
+            "type": "string"
+        },
+        "user_name": {
+            "title": "User name",
+            "type": "string"
+        }
+    }
+}

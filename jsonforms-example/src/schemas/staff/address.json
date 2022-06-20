@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "street": {
+            "title": "Street",
+            "type": "string"
+        },
+        "city_postcode": {
+            "title": "Postcode/City",
+            "type": "string"
+        },
+        "State_Country": {
+            "title": "Form of address",
+            "type": "string"
+        }
+    }
+}

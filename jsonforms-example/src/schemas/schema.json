@@ -1,0 +1,132 @@
+{
+    "definitions": {
+        "medication": {
+            "type": "object",
+            "properties": {
+                "active": {
+                    "type": "string",
+                    "enum": [
+                        "active",
+                        "obsolete"
+                    ]
+                },
+                "atc_code": {
+                    "title": "Atc code",
+                    "type": "string"
+                },
+                "category": {
+                    "type": "string"
+                },
+                "dosing_str": {
+                    "title": "Dosing strength",
+                    "type": "number"
+                },
+                "dosing_unit": {
+                    "title": "Dosing unit",
+                    "type": "string",
+                    "enum": [
+                        "mg",
+                        "ug"
+                    ]
+                },
+                "manufacturer": {
+                    "type": "string"
+                },
+                "nat_code": {
+                    "title": "National code",
+                    "type": "string"
+                },
+                "package_data": {
+                    "title": "Package data",
+                    "type": "integer"
+                },
+                "prep_form": {
+                    "title": "Preparation form",
+                    "type": "string",
+                    "enum": [
+                        "capsule",
+                        "pre-filled syringe",
+                        "tablet",
+                        "ampule"
+                    ]
+                },
+                "remarks": {
+                    "type": "string"
+                },
+                "trade_name": {
+                    "title": "Trade Name",
+                    "type": "string",
+                    "minLength": 1
+                }
+            }
+        },
+        "notification": {
+            "type": "object",
+            "properties": {
+                "allow_repetition": {
+                    "title": "Allow repetition",
+                    "type": "boolean"
+                },
+                "category_name": {
+                    "title": "Category Name",
+                    "type": "string",
+                    "minLength": 1
+                },
+                "color": {
+                    "type": "string",
+                    "enum": [
+                        "dark blue",
+                        "dark green",
+                        "white",
+                        "red",
+                        "magenta",
+                        "yellow",
+                        "cyan",
+                        "green",
+                        "blue"
+                    ]
+                },
+                "comments": {
+                    "type": "string"
+                },
+                "needs_confirmation": {
+                    "title": "Needs confirmation",
+                    "type": "boolean"
+                },
+                "pass_to_monitoring": {
+                    "title": "Pass to monitoring",
+                    "type": "boolean"
+                },
+                "notifications_type": {
+                    "type": "string",
+                    "enum": [
+                        "message",
+                        "comment"
+                    ]
+                },
+                "used_for_monitoring_comments": {
+                    "title": "Used for monitoring comments",
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "notifications_type"
+            ]
+        },
+        "staff": {
+            "$ref": "http://192.168.178.12:80/schemas/staff.json"
+        }
+    },
+    "type": "object",
+    "properties": {
+        "medications": {
+            "$ref": "#/definitions/medication"
+        },
+        "notifications": {
+            "$ref": "#/definitions/notification"
+        },
+        "staff_mgmt": {
+            "$ref": "#/definitions/staff"
+        }
+    }
+}

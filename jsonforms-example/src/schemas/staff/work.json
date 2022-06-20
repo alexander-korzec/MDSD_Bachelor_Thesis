@@ -1,0 +1,22 @@
+{
+    "type": "object",
+    "properties": {
+        "profession": {
+            "title": "Profession",
+            "type": "string"
+        },
+        "function": {
+            "title": "Function",
+            "type": "string",
+            "$ref": "http://192.168.178.12/schemas/staff/work/enum.json"
+        },
+        "position": {
+            "title": "Position",
+            "type": "string"
+        },
+        "department": {
+            "title": "Department",
+            "type": "string"
+        }
+    }
+}

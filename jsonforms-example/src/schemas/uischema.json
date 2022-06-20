@@ -1,0 +1,229 @@
+{
+    "type": "Categorization",
+    "elements": [
+        {
+            "type": "Category",
+            "label": "Medications Catalog",
+            "elements": [
+                {
+                    "type": "VerticalLayout",
+                    "elements": [
+                        {
+                            "type": "HorizontalLayout",
+                            "elements": [
+                                {
+                                    "type": "Control",
+                                    "scope": "#/properties/medications/properties/trade_name"
+                                },
+                                {
+                                    "type": "Control",
+                                    "scope": "#/properties/medications/properties/manufacturer"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "HorizontalLayout",
+                            "elements": [
+                                {
+                                    "type": "Control",
+                                    "scope": "#/properties/medications/properties/category"
+                                },
+                                {
+                                    "type": "HorizontalLayout",
+                                    "elements": [
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/medications/properties/nat_code"
+                                        },
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/medications/properties/atc_code"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "HorizontalLayout",
+                            "elements": [
+                                {
+                                    "type": "HorizontalLayout",
+                                    "elements": [
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/medications/properties/package_data"
+                                        },
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/medications/properties/prep_form"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "HorizontalLayout",
+                                    "elements": [
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/medications/properties/dosing_str"
+                                        },
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/medications/properties/dosing_unit"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "HorizontalLayout",
+                            "elements": [
+                                {
+                                    "type": "Control",
+                                    "scope": "#/properties/medications/properties/remarks"
+                                },
+                                {
+                                    "type": "Control",
+                                    "scope": "#/properties/medications/properties/active",
+                                    "options": {
+                                        "format": "radio"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Category",
+            "label": "Notification Categories",
+            "elements": [
+                {
+                    "type": "VerticalLayout",
+                    "elements": [
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/notifications/properties/category_name"
+                        },
+                        {
+                            "type": "HorizontalLayout",
+                            "elements": [
+                                {
+                                    "type": "Control",
+                                    "scope": "#/properties/notifications/properties/color"
+                                },
+                                {
+                                    "type": "Control",
+                                    "scope": "#/properties/notifications/properties/notifications_type"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "HorizontalLayout",
+                            "elements": [
+                                {
+                                    "type": "Control",
+                                    "scope": "#/properties/notifications/properties/needs_confirmation",
+                                    "rule": {
+                                        "effect": "DISABLE",
+                                        "condition": {
+                                            "scope": "#/properties/notifications/properties/type",
+                                            "schema": {
+                                                "const": "message"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "type": "Control",
+                                    "scope": "#/properties/notifications/properties/allow_repetition",
+                                    "rule": {
+                                        "effect": "DISABLE",
+                                        "condition": {
+                                            "scope": "#/properties/notifications/properties/notifications_type",
+                                            "schema": {
+                                                "const": "comment"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "type": "Control",
+                                    "scope": "#/properties/notifications/properties/pass_to_monitoring"
+                                },
+                                {
+                                    "type": "Control",
+                                    "scope": "#/properties/notifications/properties/used_for_monitoring_comments",
+                                    "rule": {
+                                        "effect": "DISABLE",
+                                        "condition": {
+                                            "scope": "#/properties/notifications/properties/type",
+                                            "schema": {
+                                                "const": "message"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Control",
+                            "scope": "#/properties/notifications/properties/comments"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Category",
+            "label": "Staff",
+            "elements": [
+                {
+                    "type": "HorizontalLayout",
+                    "elements": [
+                        {
+                            "type": "VerticalLayout",
+                            "elements": [
+                                {
+                                    "type": "Control",
+                                    "label": "Staff data",
+                                    "scope": "#/properties/staff_mgmt/properties/staff_data"
+                                },
+                                {
+                                    "type": "Control",
+                                    "label": "Address",
+                                    "scope": "#/properties/staff_mgmt/properties/address"
+                                },
+                                {
+                                    "type": "Control",
+                                    "label": "ID's",
+                                    "scope": "#/properties/staff_mgmt/properties/ids"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "VerticalLayout",
+                            "elements": [
+                                {
+                                    "type": "Control",
+                                    "label": "Work",
+                                    "scope": "#/properties/staff_mgmt/properties/work"
+                                },
+                                {
+                                    "type": "Control",
+                                    "label": "Phone",
+                                    "scope": "#/properties/staff_mgmt/properties/phone"
+                                },
+                                {
+                                    "type": "Control",
+                                    "label": "Comments",
+                                    "scope": "#/properties/staff_mgmt/properties/comments"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

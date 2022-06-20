@@ -1,0 +1,21 @@
+{
+    "type": "object",
+    "properties": {
+        "telephone_work": {
+            "title": "Telephone Work",
+            "type": "string"
+        },
+        "telephone_private_1": {
+            "title": "Private 1",
+            "type": "string",
+        },
+        "telephone_private_2": {
+            "title": "Private 2",
+            "type": "string"
+        },
+        "fax": {
+            "title": "Fax",
+            "type": "string"
+        }
+    }
+}

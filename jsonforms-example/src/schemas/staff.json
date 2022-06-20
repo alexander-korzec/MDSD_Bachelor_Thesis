@@ -1,0 +1,22 @@
+{
+    "properties": {
+        "staff_data": {
+            "$ref": "http://192.168.178.12/schemas/staff/staff_data.json"
+        },
+        "address": {
+            "$ref": "http://192.168.178.12/schemas/staff/address.json"
+        },
+        "ids": {
+            "$ref": "http://192.168.178.12/schemas/staff/ids.json"
+        },
+        "work": {
+            "$ref": "http://192.168.178.12/schemas/staff/work.json"
+        },
+        "phone": {
+            "$ref": "http://192.168.178.12/schemas/staff/phone.json"
+        },
+        "comments": {
+            "$ref": "http://192.168.178.12/schemas/staff/comments.json"
+        }
+    }
+}

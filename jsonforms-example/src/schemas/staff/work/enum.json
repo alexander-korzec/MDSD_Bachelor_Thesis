@@ -1,0 +1,6 @@
+{
+    "enum": [
+        "Nurse",
+        "Doctor"
+    ]
+}
