@@ -1,0 +1,109 @@
+{
+    "notifications": [
+        {
+            "category_name": "Appointments for patients",
+            "color": "dark blue",
+            "notifications_type": "message",
+            "pass_to_monitoring": true,
+            "needs_confirmation": true
+        },
+        {
+            "category_name": "Appointments for patients",
+            "color": "dark blue",
+            "notifications_type": "message",
+            "pass_to_monitoring": true,
+            "needs_confirmation": true,
+            "allow_repetition": true
+        },
+        {
+            "category_name": "Care handover",
+            "color": "dark green",
+            "notifications_type": "comment",
+            "pass_to_monitoring": false,
+            "needs_confirmation": true,
+            "allow_repetition": false
+        },
+        {
+            "category_name": "Doctors prescription once",
+            "color": "white",
+            "notifications_type": "message",
+            "pass_to_monitoring": true,
+            "needs_confirmation": true,
+            "allow_repetition": false
+        },
+        {
+            "category_name": "Doctors prescription with repetition",
+            "color": "white",
+            "notifications_type": "message",
+            "pass_to_monitoring": true,
+            "needs_confirmation": true,
+            "allow_repetition": true
+        },
+        {
+            "category_name": "Individual Patient Directive",
+            "color": "dark blue",
+            "notifications_type": "message",
+            "pass_to_monitoring": true,
+            "needs_confirmation": true,
+            "allow_repetition": true
+        },
+        {
+            "category_name": "Missed Dialysis",
+            "color": "red",
+            "notifications_type": "comment",
+            "pass_to_monitoring": false,
+            "needs_confirmation": true,
+            "allow_repetition": false
+        },
+        {
+            "category_name": "Report from CQI Meeting",
+            "color": "magenta",
+            "notifications_type": "comment",
+            "pass_to_monitoring": false,
+            "needs_confirmation": false,
+            "allow_repetition": false
+        },
+        {
+            "category_name": "Report from Dialysis treatment",
+            "color": "yellow",
+            "notifications_type": "comment",
+            "pass_to_monitoring": false,
+            "needs_confirmation": false,
+            "allow_repetition": false,
+            "used_for_monitoring_comments": true,
+            "comments": "(from Monitoring)"
+        },
+        {
+            "category_name": "Report on current problems",
+            "color": "cyan",
+            "notifications_type": "comment",
+            "pass_to_monitoring": false,
+            "needs_confirmation": false,
+            "allow_repetition": false
+        },
+        {
+            "category_name": "Report on current wound",
+            "color": "green",
+            "notifications_type": "comment",
+            "pass_to_monitoring": false,
+            "needs_confirmation": false,
+            "allow_repetition": false
+        },
+        {
+            "category_name": "Report on nursing",
+            "color": "blue",
+            "notifications_type": "comment",
+            "pass_to_monitoring": false,
+            "needs_confirmation": false,
+            "allow_repetition": false
+        },
+        {
+            "category_name": "Update from hospitalisation",
+            "color": "red",
+            "notifications_type": "comment",
+            "pass_to_monitoring": false,
+            "needs_confirmation": false,
+            "allow_repetition": false
+        }
+    ]
+}

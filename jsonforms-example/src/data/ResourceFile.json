@@ -1,0 +1,12 @@
+{
+    "resources": [
+        {
+            "type": "Staff",
+            "service": {
+                "address": "localhost",
+                "port": "4000"
+            },
+            "schemaPath": "staff_form"
+        }
+    ]
+}

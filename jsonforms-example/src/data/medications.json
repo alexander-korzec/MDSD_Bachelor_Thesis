@@ -1,0 +1,131 @@
+{
+    "medications": [
+      {
+        "trade_name": "Alfacalcidol 0.25mcg",
+        "manufacturer": "generic",
+        "package_data": 30,
+        "prep_form": "capsule",
+        "dosing_str": 0.25,
+        "dosing_unit": "ug",
+        "active": "active"
+      },
+      {
+        "trade_name": "Alfacalcidol 1.0mcg",
+        "manufacturer": "generic",
+        "package_data": 30,
+        "prep_form": "capsule",
+        "dosing_str": 1,
+        "dosing_unit": "ug",
+        "active": "active"
+      },
+      {
+        "trade_name": "Alfacalcidol 2.0mcg Amp",
+        "manufacturer": "generic",
+        "package_data": 30,
+        "prep_form": "ampule",
+        "dosing_str": 2,
+        "dosing_unit": "ug",
+        "active": "active"
+      },
+      {
+        "trade_name": "Aranesp",
+        "manufacturer": "Amgen",
+        "package_data": 6,
+        "prep_form": "pre-filled syringe",
+        "dosing_str": 130,
+        "dosing_unit": "ug",
+        "active": "active",
+        "category": "Erypo"
+      },
+      {
+        "trade_name": "Aranesp",
+        "manufacturer": "Amgen",
+        "package_data": 6,
+        "prep_form": "pre-filled syringe",
+        "dosing_str": 300,
+        "dosing_unit": "ug",
+        "active": "active",
+        "category": "Erypo"
+      },
+      {
+        "trade_name": "Aranesp",
+        "manufacturer": "Amgen",
+        "package_data": 6,
+        "prep_form": "pre-filled syringe",
+        "dosing_str": 40,
+        "dosing_unit": "ug",
+        "active": "active",
+        "category": "Erypo"
+      },
+      {
+        "trade_name": "Aranesp",
+        "manufacturer": "Amgen",
+        "package_data": 6,
+        "prep_form": "pre-filled syringe",
+        "dosing_str": 100,
+        "dosing_unit": "ug",
+        "active": "active",
+        "category": "Erypo"
+      },
+      {
+        "trade_name": "Aranesp",
+        "manufacturer": "Amgen",
+        "package_data": 6,
+        "prep_form": "pre-filled syringe",
+        "dosing_str": 60,
+        "dosing_unit": "ug",
+        "active": "active",
+        "category": "Erypo"
+      },
+      {
+        "trade_name": "Aranesp",
+        "manufacturer": "Amgen",
+        "package_data": 6,
+        "prep_form": "pre-filled syringe",
+        "dosing_str": 10,
+        "dosing_unit": "ug",
+        "active": "active",
+        "category": "Erypo"
+      },
+      {
+        "trade_name": "Aranesp",
+        "manufacturer": "Amgen",
+        "package_data": 6,
+        "prep_form": "pre-filled syringe",
+        "dosing_str": 80,
+        "dosing_unit": "mg",
+        "active": "active",
+        "category": "Erypo"
+      },
+      {
+        "trade_name": "Aranesp",
+        "manufacturer": "Amgen",
+        "package_data": 6,
+        "prep_form": "pre-filled syringe",
+        "dosing_str": 30,
+        "dosing_unit": "ug",
+        "active": "active",
+        "category": "Erypo"
+      },
+      {
+        "trade_name": "Aranesp",
+        "manufacturer": "Amgen",
+        "package_data": 6,
+        "prep_form": "pre-filled syringe",
+        "dosing_str": 20,
+        "dosing_unit": "ug",
+        "active": "active",
+        "category": "Erypo"
+      },
+      {
+        "trade_name": "Chlorphenamine",
+        "manufacturer": "generic",
+        "package_data": 20,
+        "prep_form": "tablet",
+        "dosing_str": 4,
+        "dosing_unit": "mg",
+        "active": "active",
+        "category": ""
+      }
+    ]
+  }

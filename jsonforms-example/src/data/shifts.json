@@ -1,0 +1,60 @@
+{
+    "shifts": [
+        {
+            "name": "M-W-F AM Ward1",
+            "center": "B. Braun",
+            "ward": "Ward 1",
+            "start_time": "07:00",
+            "end_time": "12:00"
+        },
+        {
+            "name": "M-W-F AM Ward2",
+            "center": "B. Braun",
+            "ward": "Ward 2",
+            "start_time": "07:00",
+            "end_time": "12:00"
+        },
+        {
+            "name": "M-W-F PM Ward1",
+            "center": "B. Braun",
+            "ward": "Ward 1",
+            "start_time": "13:00",
+            "end_time": "18:00"
+        },
+        {
+            "name": "M-W-F PM Ward2",
+            "center": "B. Braun",
+            "ward": "Ward 2",
+            "start_time": "13:00",
+            "end_time": "18:00"
+        },
+        {
+            "name": "T-Th-S AM Ward1",
+            "center": "B. Braun",
+            "ward": "Ward 1",
+            "start_time": "07:00",
+            "end_time": "12:00"
+        },
+        {
+            "name": "T-Th-S AM Ward2",
+            "center": "B. Braun",
+            "ward": "Ward 2",
+            "start_time": "07:00",
+            "end_time": "12:00"
+        },
+        {
+            "name": "T-Th-S PM Ward1",
+            "center": "B. Braun",
+            "ward": "Ward 1",
+            "start_time": "13:00",
+            "end_time": "18:00"
+        },
+        {
+            "name": "T-Th-S PM Ward2",
+            "center": "B. Braun",
+            "ward": "Ward 2",
+            "start_time": "13:00",
+            "end_time": "18:00"
+        }
+    ]
+}

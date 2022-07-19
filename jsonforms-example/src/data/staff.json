@@ -1,0 +1,187 @@
+{
+    "staff": [
+        {
+            "staff_data": {
+                "lastname": "Alvar",
+                "firstnames": "Paul",
+                "form_of_address": "Mr",
+                "nationality": "British",
+                "user_name": "palvar"
+            },
+            "address": {
+                "street": "64 Orchard Road",
+                "city_postcode": "ME 76Z89 Mount Everest",
+                "State_Country": "UK"
+            },
+            "ids": {
+                "staff_id_1": "52CB4646",
+                "staff_id_2": "DE4EF0"
+            },
+            "work": {
+                "function": "Nurse",
+                "position": "Nurse Director",
+                "department": "Renal"
+            },
+            "phone": {
+                "telephone_work": "05403 6360589"
+            }
+        },
+        {
+            "staff_data": {
+                "lastname": "Baloun",
+                "firstnames": "David",
+                "form_of_address": "Mr.",
+                "birth_date": "1959-05-26",
+                "nationality": "British",
+                "user_name": "palvar"
+            },
+            "work": {
+                "profession": "dialysis support worker",
+                "function": "Nurse"
+            },
+            "phone": {
+                "telephone_work": "05403 1350539"
+            },
+            "address": {
+                "street": "60 Orchard Road",
+                "city_postcode": "ME 76Z89 Mount Everest",
+                "State_Country": "UK"
+            },
+            "ids": {
+                "staff_id_1": "23BE7263",
+                "staff_id_2": "AE3FF1"
+            }
+        },
+        {
+            "staff_data": {
+                "lastname": "Batenga",
+                "firstnames": "Mercy",
+                "form_of_address": "Mrs.",
+                "birth_date": "1964-04-25",
+                "nationality": "Indian",
+                "user_name": "mpatenga"
+            },
+            "work": {
+                "profession": "Nurse",
+                "function": "Nurse"
+            },
+            "phone": {
+                "telephone_work": "05403 1665359"
+            },
+            "address": {
+                "street": "62 Orchard Road",
+                "city_postcode": "ME 76Z89 Mount Everest",
+                "State_Country": "UK"
+            },
+            "ids": {
+                "staff_id_1": "11FF2088",
+                "staff_id_2": "CC1CC2"
+            }
+        },
+        {
+            "staff_data": {
+                "lastname": "Challinor",
+                "firstnames": "Randi",
+                "form_of_address": "Mr.",
+                "birth_date": "1973-06-28",
+                "nationality": "British",
+                "user_name": "rchallinor"
+            },
+            "work": {
+                "profession": "Senior Dialysis Nurse",
+                "function": "Nurse"
+            },
+            "phone": {
+                "telephone_work": "05401 9731214"
+            },
+            "address": {
+                "street": "61 Orchard Road",
+                "city_postcode": "ME 76Z89 Mount Everest",
+                "State_Country": "UK"
+            },
+            "ids": {
+                "staff_id_1": "98AF3212",
+                "staff_id_2": "AC12AF43"
+            }
+        },
+        {
+            "staff_data": {
+                "lastname": "Conception",
+                "firstnames": "Patience",
+                "form_of_address": "Mrs.",
+                "birth_date": "1976-04-03",
+                "nationality": "British",
+                "user_name": "pconception"
+            },
+            "work": {
+                "profession": "Nurse",
+                "function": "Nurse"
+            },
+            "phone": {
+                "telephone_work": "05408 6126182"
+            },
+            "address": {
+                "street": "32 Peanuts Road",
+                "city_postcode": "ME 76Z89 Mount Everest",
+                "State_Country": "UK"
+            },
+            "ids": {
+                "staff_id_1": "66CD1212",
+                "staff_id_2": "CD12DC67"
+            }
+        },
+        {
+            "staff_data": {
+                "lastname": "Dixon",
+                "firstnames": "Kathryn",
+                "form_of_address": "Ms.",
+                "birth_date": "1957-07-08",
+                "nationality": "British",
+                "user_name": "kdixon"
+            },
+            "work": {
+                "profession": "Nurse",
+                "function": "Nurse"
+            },
+            "phone": {
+                "telephone_work": "05408 1112121"
+            },
+            "address": {
+                "street": "98 Peanuts Road",
+                "city_postcode": "ME 76Z89 Mount Everest",
+                "State_Country": "UK"
+            },
+            "ids": {
+                "staff_id_1": "96AC21AA73",
+                "staff_id_2": "AF61DE"
+            }
+        },
+        {
+            "staff_data": {
+                "lastname": "Jonas",
+                "firstnames": "Lisa",
+                "form_of_address": "Mrs.",
+                "birth_date": "1987-12-16",
+                "nationality": "British",
+                "user_name": "ljonas",
+                "title_": "Dr."
+            },
+            "work": {
+                "profession": "Physician",
+                "function": "Doctor"
+            },
+            "phone": {
+                "telephone_work": "05403 7283621"
+            },
+            "address": {
+                "street": "13 Peanuts Road",
+                "city_postcode": "ME 76Z89 Mount Everest",
+                "State_Country": "UK"
+            },
+            "ids": {
+                "staff_id_1": "53DE19EC",
+                "staff_id_2": "CE22DA"
+            }
+        }
+    ]
+}
