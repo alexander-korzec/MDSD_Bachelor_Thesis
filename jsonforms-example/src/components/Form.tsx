@@ -1,16 +1,33 @@
-import { Fragment, useEffect, useRef, useCallback } from "react";
+import { Fragment, useEffect, useState } from "react";
+import { ErrorObject } from "ajv";
 import {
     materialCells,
     materialRenderers,
 } from "@jsonforms/material-renderers";
+import { createAjv } from "@jsonforms/core";
 import { JsonForms } from "@jsonforms/react";
 import { makeStyles } from "@mui/styles";
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
-import BuildIcon from '@mui/icons-material/Build';
 
+import { useAppSelector, useAppDispatch } from '../hooks';
+import {
+    clearForm,
+    getSchema,
+    getUISchema,
+    getGlobalValidationSchema,
+    selectIsSending,
+    selectFormSchema,
+    selectFormState,
+    selectFormUISchema,
+    selectGlobalValidationPath,
+    selectGlobalValidationSchema,
+    updateFormState,
+    updateUIState
+} from '../reducers/formReducer';
 import { Resource } from "../data/ResourceFile";
-import { addData, fetchElement } from "../data/Fetch";
+import { MasterDetailState } from "./UIState";
+import DependentDropdowns, { DependentDropdownsTester } from './DependentDropdowns';
 
 const useStyles = makeStyles({
     container: {
@@ -39,68 +56,82 @@ const useStyles = makeStyles({
 });
 
 const renderers = [
+    { tester: DependentDropdownsTester, renderer: DependentDropdowns },
     ...materialRenderers
 ];
 
-const Form = (res : Resource, uischema : any, formState : any, setFormState : Function, masterData : any[], setMasterData : Function, isSending : boolean, setIsSending : Function) => {
+const isEmptyObj = (obj : object) : boolean => Object.keys(obj).length === 0;
+const P = (obj : object) : boolean => obj && !isEmptyObj(obj);
+const isLoading = (res : Resource, x : object, y : object) : boolean => (
+    !P(x) && (!("uischemaPath" in res) || !P(y))
+);
+
+const validate = (expr : any) => {
+    console.log(expr)
+    return true;
+}
+
+const ajv = createAjv({
+    formats: {
+        path: validate
+    }
+});
+
+const Form = ({ res, submitFunc, submitText } : { res : Resource, submitFunc : Function, submitText : string }) => {
     const classes = useStyles();
-    const isMounted = useRef(true);
-    const refreshMasterData = useCallback(async (item) => {
-        if (isSending) {
-            return;
-        }
-        setIsSending(true);
-        await addData(res, res.type)(item);
-        await fetchElement(res, res.type)(setMasterData);
-        if(isMounted.current) {
-            setIsSending(false);
-        }
-        setFormState({})
-    }, [isSending]);
+    const dispatch = useAppDispatch();
+    const formState = useAppSelector(selectFormState);
+    const formSchema = useAppSelector(selectFormSchema);
+    const formUISchema = useAppSelector(selectFormUISchema);
+    const isSending = useAppSelector(selectIsSending);
+    const globalValidationPath = useAppSelector(selectGlobalValidationPath);
+    const globalValidationSchema = useAppSelector(selectGlobalValidationSchema);
     useEffect(() => {
-        return () => {
-            isMounted.current = false
+        if(globalValidationPath) {
+            dispatch(getGlobalValidationSchema(globalValidationPath));
         }
-    }, []);
+    }, [globalValidationPath, dispatch]);
+    useEffect(() => {
+        dispatch(getSchema(res));
+        if("uischemaPath" in res) {
+            dispatch(getUISchema(res));
+        }
+    }, [res, dispatch]);
+    let jsonFormsOptions : any = {
+        schema: formSchema,
+        data: formState,
+        renderers: renderers,
+        cells: materialCells,
+        onChange: ({ errors, data } : { errors : any, data : any }) => dispatch(updateFormState(data)),
+    }
+    if(P(formUISchema)) {
+        jsonFormsOptions.uischema = formUISchema;
+    }
     return (
-        !(uischema) ? (
+        (isLoading(res, formSchema, formUISchema)) ? (
             <Fragment>Loading...</Fragment>
         ) : (
             <Fragment>
-            <div className={classes.form}>
-                <JsonForms
-                    schema={uischema}
-                    data={formState}
-                    renderers={renderers}
-                    cells={materialCells}
-                    onChange={({ errors, data }) => setFormState(data)}
-                />
-            </div>
-            <Button
-                variant="contained"
-                endIcon={<BuildIcon />}
-                onClick={() => refreshMasterData(formState)}
-                disabled={isSending}
-                fullWidth
-            >
-                Edit
-            </Button>
-            <Button
-                variant="contained"
-                endIcon={<SendIcon />}
-                onClick={() => {
-                    const formState2 = { ...formState};
-                    if("id" in formState2) {
-                        delete formState2["id" as keyof typeof formState2];
-                    }
-                    refreshMasterData(formState2);
-                }}
-                disabled={isSending}
-                fullWidth
-            >
-                Submit
-            </Button>
-        </Fragment>
+                <div className={classes.form}>
+                    <JsonForms
+                        { ...jsonFormsOptions }
+                        ajv={ajv}
+                    />
+                </div>
+                <Button
+                    variant="contained"
+                    endIcon={<SendIcon />}
+                    disabled={isSending}
+                    fullWidth
+                    onClick={() => {
+                        submitFunc({ resource: res, item: formState });
+                        dispatch(clearForm());
+                        dispatch(updateUIState(MasterDetailState.overview));
+                    }}
+                >
+                    { submitText }
+                </Button>
+            </Fragment>
         )
     );
 };
