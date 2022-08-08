@@ -1,3 +1,3 @@
-# BA
+# Bachelorarbeit Model-driven Development of Front-Ends for CRUD Applications
 
-Link zur Arbeit: https://overleaf.molgen.mpg.de/read/wjvskmnrqnyg
+Autor: Alexander Korzec
