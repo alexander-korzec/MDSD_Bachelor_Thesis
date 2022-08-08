@@ -1,0 +1,43 @@
+{
+    "resources": [
+        {
+            "type": "Staff",
+            "service": {
+                "address": "localhost",
+                "port": "4000",
+                "protocol": "http"
+            },
+            "schemaPath": "staff_form",
+            "uischemaPath": "staff_uischema"
+        },
+        {
+            "type": "Medication",
+            "service": {
+                "address": "localhost",
+                "port": "4000",
+                "protocol": "http"
+            },
+            "schemaPath": "medication_form_schema",
+            "uischemaPath": "medication_uischema"
+        },
+        {
+            "type": "Notification",
+            "service": {
+                "address": "localhost",
+                "port": "4000",
+                "protocol": "http"
+            },
+            "schemaPath": "notification_schema",
+            "uischemaPath": "notification_uischema"
+        },
+        {
+            "type": "Shift",
+            "service": {
+                "address": "localhost",
+                "port": "4000",
+                "protocol": "http"
+            },
+            "schemaPath": "shift_schema"
+        }
+    ]
+}

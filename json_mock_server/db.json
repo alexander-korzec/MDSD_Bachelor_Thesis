@@ -1,36 +1,521 @@
 {
-  "main_schema": {
-    "id": "main_ui",
-    "components": [
+  "validation": {
+    "medication": [
       {
-        "type": "form",
-        "binding_ids": {
-          "id": "staff_form",
-          "edit_search_criteria": [
-            "username"
-          ]
-        }
-      },
-      {
-        "type": "table",
-        "binding_ids": {
-          "id": "staff_table"
-        }
+        "instancePath": "/remarks",
+        "message": "Invalid Remarks",
+        "schemaType": {"type": "integer"},
+        "keyword": "",
+        "params": {}
       }
     ]
   },
-  "staff_schema": {
-    "type": "page",
-    "id": "staff_data",
-    "attributes": {
-      "layout": [
-        {
-          "type": "form",
-          "id": "staff_form"
-        }
+  "teams": [
+    {
+      "id": 1,
+      "color": "red",
+      "members": [
+        1,
+        5,
+        6
+      ]
+    },
+    {
+      "id": 2,
+      "color": "white",
+      "members": [
+        2,
+        4,
+        6
       ]
     }
-  },
+  ],
+  "staff": [
+    {
+      "id": 1,
+      "staff_data": {
+        "lastname": "Alvar",
+        "firstnames": "Paul",
+        "form_of_address": "Mr",
+        "nationality": "British",
+        "user_name": "palvar"
+      },
+      "address": {
+        "street": "64 Orchard Road",
+        "city_postcode": "ME 76Z89 Mount Everest",
+        "State_Country": "UK"
+      },
+      "ids": {
+        "staff_id_1": "52CB4646",
+        "staff_id_2": "DE4EF0"
+      },
+      "work": {
+        "function": "Nurse",
+        "position": "Nurse Director",
+        "department": "Renal"
+      },
+      "phone": {
+        "telephone_work": "05403 6360589"
+      }
+    },
+    {
+      "id": 3,
+      "staff_data": {
+        "lastname": "Batenga",
+        "firstnames": "Mercy",
+        "form_of_address": "Mrs.",
+        "birth_date": "1964-04-25",
+        "nationality": "Indian",
+        "user_name": "mpatenga"
+      },
+      "work": {
+        "profession": "Nurse",
+        "function": "Nurse"
+      },
+      "phone": {
+        "telephone_work": "05403 1665359"
+      },
+      "address": {
+        "street": "62 Orchard Road",
+        "city_postcode": "ME 76Z89 Mount Everest",
+        "State_Country": "UK"
+      },
+      "ids": {
+        "staff_id_1": "11FF2088",
+        "staff_id_2": "CC1CC2"
+      }
+    },
+    {
+      "id": 4,
+      "staff_data": {
+        "lastname": "Challinor",
+        "firstnames": "Randi",
+        "form_of_address": "Mr.",
+        "birth_date": "1973-06-28",
+        "nationality": "British",
+        "user_name": "rchallinor"
+      },
+      "work": {
+        "profession": "Senior Dialysis Nurse",
+        "function": "Nurse"
+      },
+      "phone": {
+        "telephone_work": "05401 9731214"
+      },
+      "address": {
+        "street": "61 Orchard Road",
+        "city_postcode": "ME 76Z89 Mount Everest",
+        "State_Country": "UK"
+      },
+      "ids": {
+        "staff_id_1": "98AF3212",
+        "staff_id_2": "AC12AF43"
+      }
+    },
+    {
+      "id": 5,
+      "staff_data": {
+        "lastname": "Conception",
+        "firstnames": "Patience",
+        "form_of_address": "Mrs.",
+        "birth_date": "1976-04-03",
+        "nationality": "British",
+        "user_name": "pconception"
+      },
+      "work": {
+        "profession": "Nurse",
+        "function": "Nurse"
+      },
+      "phone": {
+        "telephone_work": "05408 6126182"
+      },
+      "address": {
+        "street": "32 Peanuts Road",
+        "city_postcode": "ME 76Z89 Mount Everest",
+        "State_Country": "UK"
+      },
+      "ids": {
+        "staff_id_1": "66CD1212",
+        "staff_id_2": "CD12DC67"
+      }
+    },
+    {
+      "id": 6,
+      "staff_data": {
+        "lastname": "Dixon",
+        "firstnames": "Kathryn",
+        "form_of_address": "Ms.",
+        "birth_date": "1957-07-08",
+        "nationality": "British",
+        "user_name": "kdixon"
+      },
+      "work": {
+        "profession": "Nurse",
+        "function": "Nurse"
+      },
+      "phone": {
+        "telephone_work": "05408 1112121"
+      },
+      "address": {
+        "street": "98 Peanuts Road",
+        "city_postcode": "ME 76Z89 Mount Everest",
+        "State_Country": "UK"
+      },
+      "ids": {
+        "staff_id_1": "96AC21AA73",
+        "staff_id_2": "AF61DE"
+      }
+    },
+    {
+      "id": 7,
+      "staff_data": {
+        "lastname": "Jonas",
+        "firstnames": "Lisa",
+        "form_of_address": "Mrs.",
+        "birth_date": "1987-12-16",
+        "nationality": "British",
+        "user_name": "ljonas",
+        "title_": "Dr."
+      },
+      "work": {
+        "profession": "Physician",
+        "function": "Doctor"
+      },
+      "phone": {
+        "telephone_work": "05403 7283621"
+      },
+      "address": {
+        "street": "13 Peanuts Road",
+        "city_postcode": "ME 76Z89 Mount Everest",
+        "State_Country": "UK"
+      },
+      "ids": {
+        "staff_id_1": "53DE19EC",
+        "staff_id_2": "CE22DA"
+      }
+    }
+  ],
+  "medication": [
+    {
+      "id": 1,
+      "trade_name": "Alfacalcidol 0.25mcg",
+      "manufacturer": "generic",
+      "package_data": 30,
+      "prep_form": "capsule",
+      "dosing_str": 0.25,
+      "dosing_unit": "ug",
+      "active": "active"
+    },
+    {
+      "id": 2,
+      "trade_name": "Alfacalcidol 1.0mcg",
+      "manufacturer": "generic",
+      "package_data": 30,
+      "prep_form": "capsule",
+      "dosing_str": 1,
+      "dosing_unit": "ug",
+      "active": "active"
+    },
+    {
+      "id": 3,
+      "trade_name": "Alfacalcidol 2.0mcg Amp",
+      "manufacturer": "generic",
+      "package_data": 30,
+      "prep_form": "ampule",
+      "dosing_str": 2,
+      "dosing_unit": "ug",
+      "active": "active"
+    },
+    {
+      "id": 4,
+      "trade_name": "Baba",
+      "manufacturer": "Amgen",
+      "package_data": 6,
+      "prep_form": "pre-filled syringe",
+      "dosing_str": 130,
+      "dosing_unit": "ug",
+      "active": "active",
+      "category": "Erypo"
+    },
+    {
+      "id": 5,
+      "trade_name": "Aranesp",
+      "manufacturer": "Amgen",
+      "package_data": 6,
+      "prep_form": "pre-filled syringe",
+      "dosing_str": 300,
+      "dosing_unit": "ug",
+      "active": "active",
+      "category": "Erypo"
+    },
+    {
+      "id": 6,
+      "trade_name": "Aranesp",
+      "manufacturer": "Amgen",
+      "package_data": 6,
+      "prep_form": "pre-filled syringe",
+      "dosing_str": 40,
+      "dosing_unit": "ug",
+      "active": "active",
+      "category": "Erypo"
+    },
+    {
+      "id": 7,
+      "trade_name": "Aranesp",
+      "manufacturer": "Amgen",
+      "package_data": 6,
+      "prep_form": "pre-filled syringe",
+      "dosing_str": 100,
+      "dosing_unit": "ug",
+      "active": "active",
+      "category": "Erypo"
+    },
+    {
+      "id": 8,
+      "trade_name": "Aranesp",
+      "manufacturer": "Amgen",
+      "package_data": 6,
+      "prep_form": "pre-filled syringe",
+      "dosing_str": 60,
+      "dosing_unit": "ug",
+      "active": "active",
+      "category": "Erypo"
+    },
+    {
+      "id": 9,
+      "trade_name": "Aranesp",
+      "manufacturer": "Amgen",
+      "package_data": 6,
+      "prep_form": "pre-filled syringe",
+      "dosing_str": 10,
+      "dosing_unit": "ug",
+      "active": "active",
+      "category": "Erypo"
+    },
+    {
+      "id": 10,
+      "trade_name": "Aranesp",
+      "manufacturer": "Amgen",
+      "package_data": 6,
+      "prep_form": "pre-filled syringe",
+      "dosing_str": 80,
+      "dosing_unit": "mg",
+      "active": "active",
+      "category": "Erypo"
+    },
+    {
+      "id": 11,
+      "trade_name": "Aranesp",
+      "manufacturer": "Amgen",
+      "package_data": 6,
+      "prep_form": "pre-filled syringe",
+      "dosing_str": 30,
+      "dosing_unit": "ug",
+      "active": "active",
+      "category": "Erypo"
+    },
+    {
+      "id": 12,
+      "trade_name": "Aranesp",
+      "manufacturer": "Amgen",
+      "package_data": 6,
+      "prep_form": "pre-filled syringe",
+      "dosing_str": 20,
+      "dosing_unit": "ug",
+      "active": "active",
+      "category": "Erypo"
+    },
+    {
+      "id": 13,
+      "trade_name": "Chlorphenamine",
+      "manufacturer": "generic",
+      "package_data": 20,
+      "prep_form": "tablet",
+      "dosing_str": 4,
+      "dosing_unit": "mg",
+      "active": "active",
+      "category": ""
+    }
+  ],
+  "shift": [
+    {
+      "id": 1,
+      "shift_name": "M-W-F AM Ward1",
+      "center": "B. Braun",
+      "ward": "Ward 1",
+      "shift_start": "07:00:00",
+      "shift_end": "12:00:00"
+    },
+    {
+      "id": 2,
+      "shift_name": "M-W-F AM Ward2",
+      "center": "B. Braun",
+      "ward": "Ward 2",
+      "shift_start": "06:00:00",
+      "shift_end": "12:00:00"
+    },
+    {
+      "id": 3,
+      "shift_name": "M-W-F PM Ward1",
+      "center": "B. Braun",
+      "ward": "Ward 1",
+      "shift_start": "13:00:00",
+      "shift_end": "20:00:00"
+    },
+    {
+      "id": 5,
+      "shift_name": "T-Th-S AM Ward1",
+      "center": "B. Braun",
+      "ward": "Ward 1",
+      "shift_start": "07:00:00",
+      "shift_end": "12:00:00"
+    },
+    {
+      "id": 6,
+      "shift_name": "T-Th-S AM Ward2",
+      "center": "B. Braun",
+      "ward": "Ward 2",
+      "shift_start": "07:00:00",
+      "shift_end": "12:00:00"
+    },
+    {
+      "id": 7,
+      "shift_name": "T-Th-S PM Ward1",
+      "center": "B. Braun",
+      "ward": "Ward 1",
+      "shift_start": "13:00:00",
+      "shift_end": "19:00:00"
+    },
+    {
+      "id": 8,
+      "shift_name": "T-Th-S PM Ward2",
+      "center": "B. Braun",
+      "ward": "Ward 2",
+      "shift_start": "10:00:00",
+      "shift_end": "18:00:00"
+    }
+  ],
+  "notification": [
+    {
+      "id": 1,
+      "staffId": 3,
+      "category_name": "Appointments for patients",
+      "color": "dark blue",
+      "notifications_type": "message",
+      "pass_to_monitoring": true,
+      "needs_confirmation": true
+    },
+    {
+      "id": 2,
+      "category_name": "Appointments for patients",
+      "color": "dark blue",
+      "notifications_type": "message",
+      "pass_to_monitoring": true,
+      "needs_confirmation": true,
+      "allow_repetition": true
+    },
+    {
+      "id": 3,
+      "category_name": "Care handover",
+      "color": "dark green",
+      "notifications_type": "comment",
+      "pass_to_monitoring": false,
+      "needs_confirmation": true,
+      "allow_repetition": false
+    },
+    {
+      "id": 4,
+      "category_name": "Doctors prescription once",
+      "color": "white",
+      "notifications_type": "message",
+      "pass_to_monitoring": true,
+      "needs_confirmation": true,
+      "allow_repetition": false
+    },
+    {
+      "id": 5,
+      "category_name": "Doctors prescription with repetition",
+      "color": "white",
+      "notifications_type": "message",
+      "pass_to_monitoring": true,
+      "needs_confirmation": true,
+      "allow_repetition": true
+    },
+    {
+      "id": 6,
+      "category_name": "Individual Patient Directive",
+      "color": "dark blue",
+      "notifications_type": "message",
+      "pass_to_monitoring": true,
+      "needs_confirmation": true,
+      "allow_repetition": true
+    },
+    {
+      "id": 7,
+      "category_name": "Missed Dialysis",
+      "color": "red",
+      "notifications_type": "comment",
+      "pass_to_monitoring": false,
+      "needs_confirmation": true,
+      "allow_repetition": false
+    },
+    {
+      "id": 8,
+      "category_name": "Report from CQI Meeting",
+      "color": "magenta",
+      "notifications_type": "comment",
+      "pass_to_monitoring": false,
+      "needs_confirmation": false,
+      "allow_repetition": false
+    },
+    {
+      "id": 9,
+      "category_name": "Report from Dialysis treatment",
+      "color": "yellow",
+      "notifications_type": "comment",
+      "pass_to_monitoring": false,
+      "needs_confirmation": false,
+      "allow_repetition": false,
+      "used_for_monitoring_comments": true,
+      "comments": "(from Monitoring)"
+    },
+    {
+      "id": 10,
+      "category_name": "Report on current problems",
+      "color": "cyan",
+      "notifications_type": "comment",
+      "pass_to_monitoring": false,
+      "needs_confirmation": false,
+      "allow_repetition": false
+    },
+    {
+      "id": 11,
+      "category_name": "Report on current wound",
+      "color": "green",
+      "notifications_type": "comment",
+      "pass_to_monitoring": false,
+      "needs_confirmation": false,
+      "allow_repetition": false
+    },
+    {
+      "id": 12,
+      "category_name": "Report on nursing",
+      "color": "blue",
+      "notifications_type": "comment",
+      "pass_to_monitoring": false,
+      "needs_confirmation": false,
+      "allow_repetition": false
+    },
+    {
+      "id": 13,
+      "category_name": "Update from hospitalisation",
+      "color": "red",
+      "notifications_type": "comment",
+      "pass_to_monitoring": false,
+      "needs_confirmation": false,
+      "allow_repetition": false
+    }
+  ],
   "staff_form": {
     "type": "object",
     "properties": {
@@ -159,1082 +644,417 @@
       }
     }
   },
-  "staff_data": {
-    "links": {
-      "self": "http://http://127.0.0.1:3000/staff"
-    },
-    "data": [
+  "staff_uischema": {
+    "type": "VerticalLayout",
+    "label": "Staff",
+    "elements": [
       {
-        "id": "62bcd7c16a2ebb1cd4d82893",
-        "type": "staff",
-        "attributes": {
-          "staff_data": {
-            "lastname": "Alvar",
-            "firstnames": "Paul",
-            "form_of_address": "Mr",
-            "nationality": "British",
-            "_id": "62bcd7c16a2ebb1cd4d82898",
-            "id": "62bcd7c16a2ebb1cd4d82898"
+        "type": "HorizontalLayout",
+        "elements": [
+          {
+            "type": "VerticalLayout",
+            "elements": [
+              {
+                "type": "Control",
+                "label": "Staff data",
+                "scope": "#/properties/staff_mgmt/properties/staff_data"
+              },
+              {
+                "type": "Control",
+                "label": "Address",
+                "scope": "#/properties/staff_mgmt/properties/address"
+              },
+              {
+                "type": "Control",
+                "label": "ID's",
+                "scope": "#/properties/staff_mgmt/properties/ids"
+              }
+            ]
           },
-          "address": {
-            "street": "64 Orchard Road",
-            "city_postcode": "ME 76Z89 Mount Everest",
-            "_id": "62bcd7c16a2ebb1cd4d82897",
-            "id": "62bcd7c16a2ebb1cd4d82897"
-          },
-          "ids": {
-            "staff_id_1": "52CB4646",
-            "staff_id_2": "DE4EF0",
-            "_id": "62bcd7c16a2ebb1cd4d82896",
-            "id": "62bcd7c16a2ebb1cd4d82896"
-          },
-          "work": {
-            "function": "Nurse",
-            "position": "Nurse Director",
-            "department": "Renal",
-            "_id": "62bcd7c16a2ebb1cd4d82895",
-            "id": "62bcd7c16a2ebb1cd4d82895"
-          },
-          "phone": {
-            "telephone_work": "05403 6360589",
-            "_id": "62bcd7c16a2ebb1cd4d82894",
-            "id": "62bcd7c16a2ebb1cd4d82894"
+          {
+            "type": "VerticalLayout",
+            "elements": [
+              {
+                "type": "Control",
+                "label": "Work",
+                "scope": "#/properties/staff_mgmt/properties/work"
+              },
+              {
+                "type": "Control",
+                "label": "Phone",
+                "scope": "#/properties/staff_mgmt/properties/phone"
+              },
+              {
+                "type": "Control",
+                "label": "Comments",
+                "scope": "#/properties/staff_mgmt/properties/comments"
+              }
+            ]
           }
-        },
-        "links": {
-          "self": "http://127.0.0.1:3000/staff/62bcd7c16a2ebb1cd4d82893"
-        }
-      },
-      {
-        "id": "62bcd7c16a2ebb1cd4d82899",
-        "type": "staff",
-        "attributes": {
-          "staff_data": {
-            "lastname": "Baloun",
-            "firstnames": "David",
-            "form_of_address": "Mr.",
-            "birth_date": "1959-05-26T00:00:00.000Z",
-            "nationality": "British",
-            "_id": "62bcd7c16a2ebb1cd4d8289e",
-            "id": "62bcd7c16a2ebb1cd4d8289e"
-          },
-          "work": {
-            "profession": "dialysis support worker",
-            "function": "Nurse",
-            "_id": "62bcd7c16a2ebb1cd4d8289d",
-            "id": "62bcd7c16a2ebb1cd4d8289d"
-          },
-          "phone": {
-            "telephone_work": "05403 1350539",
-            "_id": "62bcd7c16a2ebb1cd4d8289c",
-            "id": "62bcd7c16a2ebb1cd4d8289c"
-          },
-          "address": {
-            "street": "60 Orchard Road",
-            "city_postcode": "ME 76Z89 Mount Everest",
-            "_id": "62bcd7c16a2ebb1cd4d8289b",
-            "id": "62bcd7c16a2ebb1cd4d8289b"
-          },
-          "ids": {
-            "staff_id_1": "23BE7263",
-            "staff_id_2": "AE3FF1",
-            "_id": "62bcd7c16a2ebb1cd4d8289a",
-            "id": "62bcd7c16a2ebb1cd4d8289a"
-          }
-        },
-        "links": {
-          "self": "http://127.0.0.1:3000/staff/62bcd7c16a2ebb1cd4d82899"
-        }
-      },
-      {
-        "id": "62bcd7c16a2ebb1cd4d8289f",
-        "type": "staff",
-        "attributes": {
-          "staff_data": {
-            "lastname": "Batenga",
-            "firstnames": "Mercy",
-            "form_of_address": "Mrs.",
-            "birth_date": "1964-04-25T00:00:00.000Z",
-            "nationality": "Indian",
-            "_id": "62bcd7c16a2ebb1cd4d828a4",
-            "id": "62bcd7c16a2ebb1cd4d828a4"
-          },
-          "work": {
-            "profession": "Nurse",
-            "function": "Nurse",
-            "_id": "62bcd7c16a2ebb1cd4d828a3",
-            "id": "62bcd7c16a2ebb1cd4d828a3"
-          },
-          "phone": {
-            "telephone_work": "05403 1665359",
-            "_id": "62bcd7c16a2ebb1cd4d828a2",
-            "id": "62bcd7c16a2ebb1cd4d828a2"
-          },
-          "address": {
-            "street": "62 Orchard Road",
-            "city_postcode": "ME 76Z89 Mount Everest",
-            "_id": "62bcd7c16a2ebb1cd4d828a1",
-            "id": "62bcd7c16a2ebb1cd4d828a1"
-          },
-          "ids": {
-            "staff_id_1": "11FF2088",
-            "staff_id_2": "CC1CC2",
-            "_id": "62bcd7c16a2ebb1cd4d828a0",
-            "id": "62bcd7c16a2ebb1cd4d828a0"
-          }
-        },
-        "links": {
-          "self": "http://127.0.0.1:3000/staff/62bcd7c16a2ebb1cd4d8289f"
-        }
-      },
-      {
-        "id": "62bcd7c16a2ebb1cd4d828ab",
-        "type": "staff",
-        "attributes": {
-          "staff_data": {
-            "lastname": "Conception",
-            "firstnames": "Patience",
-            "form_of_address": "Mrs.",
-            "birth_date": "1976-04-03T00:00:00.000Z",
-            "nationality": "British",
-            "_id": "62bcd7c16a2ebb1cd4d828b0",
-            "id": "62bcd7c16a2ebb1cd4d828b0"
-          },
-          "work": {
-            "profession": "Nurse",
-            "function": "Nurse",
-            "_id": "62bcd7c16a2ebb1cd4d828af",
-            "id": "62bcd7c16a2ebb1cd4d828af"
-          },
-          "phone": {
-            "telephone_work": "05408 6126182",
-            "_id": "62bcd7c16a2ebb1cd4d828ae",
-            "id": "62bcd7c16a2ebb1cd4d828ae"
-          },
-          "address": {
-            "street": "32 Peanuts Road",
-            "city_postcode": "ME 76Z89 Mount Everest",
-            "_id": "62bcd7c16a2ebb1cd4d828ad",
-            "id": "62bcd7c16a2ebb1cd4d828ad"
-          },
-          "ids": {
-            "staff_id_1": "66CD1212",
-            "staff_id_2": "CD12DC67",
-            "_id": "62bcd7c16a2ebb1cd4d828ac",
-            "id": "62bcd7c16a2ebb1cd4d828ac"
-          }
-        },
-        "links": {
-          "self": "http://127.0.0.1:3000/staff/62bcd7c16a2ebb1cd4d828ab"
-        }
-      },
-      {
-        "id": "62bcd7c16a2ebb1cd4d828a5",
-        "type": "staff",
-        "attributes": {
-          "staff_data": {
-            "lastname": "Challinor",
-            "firstnames": "Randi",
-            "form_of_address": "Mr.",
-            "birth_date": "1973-06-28T00:00:00.000Z",
-            "nationality": "British",
-            "_id": "62bcd7c16a2ebb1cd4d828aa",
-            "id": "62bcd7c16a2ebb1cd4d828aa"
-          },
-          "work": {
-            "profession": "Senior Dialysis Nurse",
-            "function": "Nurse",
-            "_id": "62bcd7c16a2ebb1cd4d828a9",
-            "id": "62bcd7c16a2ebb1cd4d828a9"
-          },
-          "phone": {
-            "telephone_work": "05401 9731214",
-            "_id": "62bcd7c16a2ebb1cd4d828a8",
-            "id": "62bcd7c16a2ebb1cd4d828a8"
-          },
-          "address": {
-            "street": "61 Orchard Road",
-            "city_postcode": "ME 76Z89 Mount Everest",
-            "_id": "62bcd7c16a2ebb1cd4d828a7",
-            "id": "62bcd7c16a2ebb1cd4d828a7"
-          },
-          "ids": {
-            "staff_id_1": "98AF3212",
-            "staff_id_2": "AC12AF43",
-            "_id": "62bcd7c16a2ebb1cd4d828a6",
-            "id": "62bcd7c16a2ebb1cd4d828a6"
-          }
-        },
-        "links": {
-          "self": "http://127.0.0.1:3000/staff/62bcd7c16a2ebb1cd4d828a5"
-        }
-      },
-      {
-        "id": "62bcd7c16a2ebb1cd4d828b1",
-        "type": "staff",
-        "attributes": {
-          "staff_data": {
-            "lastname": "Dixon",
-            "firstnames": "Kathryn",
-            "form_of_address": "Ms.",
-            "birth_date": "1957-07-08T00:00:00.000Z",
-            "nationality": "British",
-            "_id": "62bcd7c16a2ebb1cd4d828b6",
-            "id": "62bcd7c16a2ebb1cd4d828b6"
-          },
-          "work": {
-            "profession": "Nurse",
-            "function": "Nurse",
-            "_id": "62bcd7c16a2ebb1cd4d828b5",
-            "id": "62bcd7c16a2ebb1cd4d828b5"
-          },
-          "phone": {
-            "telephone_work": "05408 1112121",
-            "_id": "62bcd7c16a2ebb1cd4d828b4",
-            "id": "62bcd7c16a2ebb1cd4d828b4"
-          },
-          "address": {
-            "street": "98 Peanuts Road",
-            "city_postcode": "ME 76Z89 Mount Everest",
-            "_id": "62bcd7c16a2ebb1cd4d828b3",
-            "id": "62bcd7c16a2ebb1cd4d828b3"
-          },
-          "ids": {
-            "staff_id_1": "96AC21AA73",
-            "staff_id_2": "AF61DE",
-            "_id": "62bcd7c16a2ebb1cd4d828b2",
-            "id": "62bcd7c16a2ebb1cd4d828b2"
-          }
-        },
-        "links": {
-          "self": "http://127.0.0.1:3000/staff/62bcd7c16a2ebb1cd4d828b1"
-        }
-      },
-      {
-        "id": "62bcd7c16a2ebb1cd4d828b7",
-        "type": "staff",
-        "attributes": {
-          "staff_data": {
-            "lastname": "Jonas",
-            "firstnames": "Lisa",
-            "form_of_address": "Mrs.",
-            "birth_date": "1987-12-16T00:00:00.000Z",
-            "nationality": "British",
-            "title_": "Dr.",
-            "_id": "62bcd7c16a2ebb1cd4d828bc",
-            "id": "62bcd7c16a2ebb1cd4d828bc"
-          },
-          "work": {
-            "profession": "Physician",
-            "function": "Doctor",
-            "_id": "62bcd7c16a2ebb1cd4d828bb",
-            "id": "62bcd7c16a2ebb1cd4d828bb"
-          },
-          "phone": {
-            "telephone_work": "05403 7283621",
-            "_id": "62bcd7c16a2ebb1cd4d828ba",
-            "id": "62bcd7c16a2ebb1cd4d828ba"
-          },
-          "address": {
-            "street": "13 Peanuts Road",
-            "city_postcode": "ME 76Z89 Mount Everest",
-            "_id": "62bcd7c16a2ebb1cd4d828b9",
-            "id": "62bcd7c16a2ebb1cd4d828b9"
-          },
-          "ids": {
-            "staff_id_1": "53DE19EC",
-            "staff_id_2": "CE22DA",
-            "_id": "62bcd7c16a2ebb1cd4d828b8",
-            "id": "62bcd7c16a2ebb1cd4d828b8"
-          }
-        },
-        "links": {
-          "self": "http://127.0.0.1:3000/staff/62bcd7c16a2ebb1cd4d828b7"
-        }
-      },
-      {
-        "id": "62bcdb6f183b971f9f326872",
-        "type": "staff",
-        "attributes": {
-          "staff_data": {
-            "lastname": "Alvar",
-            "firstnames": "Paul",
-            "form_of_address": "Mr",
-            "nationality": "British",
-            "_id": "62bcdb6f183b971f9f326877",
-            "id": "62bcdb6f183b971f9f326877"
-          },
-          "address": {
-            "street": "64 Orchard Road",
-            "city_postcode": "ME 76Z89 Mount Everest",
-            "_id": "62bcdb6f183b971f9f326876",
-            "id": "62bcdb6f183b971f9f326876"
-          },
-          "ids": {
-            "staff_id_1": "52CB4646",
-            "staff_id_2": "DE4EF0",
-            "_id": "62bcdb6f183b971f9f326875",
-            "id": "62bcdb6f183b971f9f326875"
-          },
-          "work": {
-            "function": "Nurse",
-            "position": "Nurse Director",
-            "department": "Renal",
-            "_id": "62bcdb6f183b971f9f326874",
-            "id": "62bcdb6f183b971f9f326874"
-          },
-          "phone": {
-            "telephone_work": "05403 6360589",
-            "_id": "62bcdb6f183b971f9f326873",
-            "id": "62bcdb6f183b971f9f326873"
-          }
-        },
-        "links": {
-          "self": "http://127.0.0.1:3000/staff/62bcdb6f183b971f9f326872"
-        }
-      },
-      {
-        "id": "62bcdb6f183b971f9f326878",
-        "type": "staff",
-        "attributes": {
-          "staff_data": {
-            "lastname": "Baloun",
-            "firstnames": "David",
-            "form_of_address": "Mr.",
-            "birth_date": "1959-05-26T00:00:00.000Z",
-            "nationality": "British",
-            "_id": "62bcdb6f183b971f9f32687d",
-            "id": "62bcdb6f183b971f9f32687d"
-          },
-          "work": {
-            "profession": "dialysis support worker",
-            "function": "Nurse",
-            "_id": "62bcdb6f183b971f9f32687c",
-            "id": "62bcdb6f183b971f9f32687c"
-          },
-          "phone": {
-            "telephone_work": "05403 1350539",
-            "_id": "62bcdb6f183b971f9f32687b",
-            "id": "62bcdb6f183b971f9f32687b"
-          },
-          "address": {
-            "street": "60 Orchard Road",
-            "city_postcode": "ME 76Z89 Mount Everest",
-            "_id": "62bcdb6f183b971f9f32687a",
-            "id": "62bcdb6f183b971f9f32687a"
-          },
-          "ids": {
-            "staff_id_1": "23BE7263",
-            "staff_id_2": "AE3FF1",
-            "_id": "62bcdb6f183b971f9f326879",
-            "id": "62bcdb6f183b971f9f326879"
-          }
-        },
-        "links": {
-          "self": "http://127.0.0.1:3000/staff/62bcdb6f183b971f9f326878"
-        }
-      },
-      {
-        "id": "62bcdb6f183b971f9f32687e",
-        "type": "staff",
-        "attributes": {
-          "staff_data": {
-            "lastname": "Batenga",
-            "firstnames": "Mercy",
-            "form_of_address": "Mrs.",
-            "birth_date": "1964-04-25T00:00:00.000Z",
-            "nationality": "Indian",
-            "_id": "62bcdb6f183b971f9f326883",
-            "id": "62bcdb6f183b971f9f326883"
-          },
-          "work": {
-            "profession": "Nurse",
-            "function": "Nurse",
-            "_id": "62bcdb6f183b971f9f326882",
-            "id": "62bcdb6f183b971f9f326882"
-          },
-          "phone": {
-            "telephone_work": "05403 1665359",
-            "_id": "62bcdb6f183b971f9f326881",
-            "id": "62bcdb6f183b971f9f326881"
-          },
-          "address": {
-            "street": "62 Orchard Road",
-            "city_postcode": "ME 76Z89 Mount Everest",
-            "_id": "62bcdb6f183b971f9f326880",
-            "id": "62bcdb6f183b971f9f326880"
-          },
-          "ids": {
-            "staff_id_1": "11FF2088",
-            "staff_id_2": "CC1CC2",
-            "_id": "62bcdb6f183b971f9f32687f",
-            "id": "62bcdb6f183b971f9f32687f"
-          }
-        },
-        "links": {
-          "self": "http://127.0.0.1:3000/staff/62bcdb6f183b971f9f32687e"
-        }
-      },
-      {
-        "id": "62bcdb6f183b971f9f326884",
-        "type": "staff",
-        "attributes": {
-          "staff_data": {
-            "lastname": "Challinor",
-            "firstnames": "Randi",
-            "form_of_address": "Mr.",
-            "birth_date": "1973-06-28T00:00:00.000Z",
-            "nationality": "British",
-            "_id": "62bcdb6f183b971f9f326889",
-            "id": "62bcdb6f183b971f9f326889"
-          },
-          "work": {
-            "profession": "Senior Dialysis Nurse",
-            "function": "Nurse",
-            "_id": "62bcdb6f183b971f9f326888",
-            "id": "62bcdb6f183b971f9f326888"
-          },
-          "phone": {
-            "telephone_work": "05401 9731214",
-            "_id": "62bcdb6f183b971f9f326887",
-            "id": "62bcdb6f183b971f9f326887"
-          },
-          "address": {
-            "street": "61 Orchard Road",
-            "city_postcode": "ME 76Z89 Mount Everest",
-            "_id": "62bcdb6f183b971f9f326886",
-            "id": "62bcdb6f183b971f9f326886"
-          },
-          "ids": {
-            "staff_id_1": "98AF3212",
-            "staff_id_2": "AC12AF43",
-            "_id": "62bcdb6f183b971f9f326885",
-            "id": "62bcdb6f183b971f9f326885"
-          }
-        },
-        "links": {
-          "self": "http://127.0.0.1:3000/staff/62bcdb6f183b971f9f326884"
-        }
-      },
-      {
-        "id": "62bcdb6f183b971f9f326890",
-        "type": "staff",
-        "attributes": {
-          "staff_data": {
-            "lastname": "Dixon",
-            "firstnames": "Kathryn",
-            "form_of_address": "Ms.",
-            "birth_date": "1957-07-08T00:00:00.000Z",
-            "nationality": "British",
-            "_id": "62bcdb6f183b971f9f326895",
-            "id": "62bcdb6f183b971f9f326895"
-          },
-          "work": {
-            "profession": "Nurse",
-            "function": "Nurse",
-            "_id": "62bcdb6f183b971f9f326894",
-            "id": "62bcdb6f183b971f9f326894"
-          },
-          "phone": {
-            "telephone_work": "05408 1112121",
-            "_id": "62bcdb6f183b971f9f326893",
-            "id": "62bcdb6f183b971f9f326893"
-          },
-          "address": {
-            "street": "98 Peanuts Road",
-            "city_postcode": "ME 76Z89 Mount Everest",
-            "_id": "62bcdb6f183b971f9f326892",
-            "id": "62bcdb6f183b971f9f326892"
-          },
-          "ids": {
-            "staff_id_1": "96AC21AA73",
-            "staff_id_2": "AF61DE",
-            "_id": "62bcdb6f183b971f9f326891",
-            "id": "62bcdb6f183b971f9f326891"
-          }
-        },
-        "links": {
-          "self": "http://127.0.0.1:3000/staff/62bcdb6f183b971f9f326890"
-        }
-      },
-      {
-        "id": "62bcdb6f183b971f9f32688a",
-        "type": "staff",
-        "attributes": {
-          "staff_data": {
-            "lastname": "Conception",
-            "firstnames": "Patience",
-            "form_of_address": "Mrs.",
-            "birth_date": "1976-04-03T00:00:00.000Z",
-            "nationality": "British",
-            "_id": "62bcdb6f183b971f9f32688f",
-            "id": "62bcdb6f183b971f9f32688f"
-          },
-          "work": {
-            "profession": "Nurse",
-            "function": "Nurse",
-            "_id": "62bcdb6f183b971f9f32688e",
-            "id": "62bcdb6f183b971f9f32688e"
-          },
-          "phone": {
-            "telephone_work": "05408 6126182",
-            "_id": "62bcdb6f183b971f9f32688d",
-            "id": "62bcdb6f183b971f9f32688d"
-          },
-          "address": {
-            "street": "32 Peanuts Road",
-            "city_postcode": "ME 76Z89 Mount Everest",
-            "_id": "62bcdb6f183b971f9f32688c",
-            "id": "62bcdb6f183b971f9f32688c"
-          },
-          "ids": {
-            "staff_id_1": "66CD1212",
-            "staff_id_2": "CD12DC67",
-            "_id": "62bcdb6f183b971f9f32688b",
-            "id": "62bcdb6f183b971f9f32688b"
-          }
-        },
-        "links": {
-          "self": "http://127.0.0.1:3000/staff/62bcdb6f183b971f9f32688a"
-        }
-      },
-      {
-        "id": "62bcdb6f183b971f9f326896",
-        "type": "staff",
-        "attributes": {
-          "staff_data": {
-            "lastname": "Jonas",
-            "firstnames": "Lisa",
-            "form_of_address": "Mrs.",
-            "birth_date": "1987-12-16T00:00:00.000Z",
-            "nationality": "British",
-            "title_": "Dr.",
-            "_id": "62bcdb6f183b971f9f32689b",
-            "id": "62bcdb6f183b971f9f32689b"
-          },
-          "work": {
-            "profession": "Physician",
-            "function": "Doctor",
-            "_id": "62bcdb6f183b971f9f32689a",
-            "id": "62bcdb6f183b971f9f32689a"
-          },
-          "phone": {
-            "telephone_work": "05403 7283621",
-            "_id": "62bcdb6f183b971f9f326899",
-            "id": "62bcdb6f183b971f9f326899"
-          },
-          "address": {
-            "street": "13 Peanuts Road",
-            "city_postcode": "ME 76Z89 Mount Everest",
-            "_id": "62bcdb6f183b971f9f326898",
-            "id": "62bcdb6f183b971f9f326898"
-          },
-          "ids": {
-            "staff_id_1": "53DE19EC",
-            "staff_id_2": "CE22DA",
-            "_id": "62bcdb6f183b971f9f326897",
-            "id": "62bcdb6f183b971f9f326897"
-          }
-        },
-        "links": {
-          "self": "http://127.0.0.1:3000/staff/62bcdb6f183b971f9f326896"
-        }
-      },
-      {
-        "id": "62bcdb88183b971f9f32689c",
-        "type": "staff",
-        "attributes": {
-          "staff_data": {
-            "lastname": "Alvar",
-            "firstnames": "Paul",
-            "form_of_address": "Mr",
-            "nationality": "British",
-            "_id": "62bcdb88183b971f9f3268a1",
-            "id": "62bcdb88183b971f9f3268a1"
-          },
-          "address": {
-            "street": "64 Orchard Road",
-            "city_postcode": "ME 76Z89 Mount Everest",
-            "_id": "62bcdb88183b971f9f3268a0",
-            "id": "62bcdb88183b971f9f3268a0"
-          },
-          "ids": {
-            "staff_id_1": "52CB4646",
-            "staff_id_2": "DE4EF0",
-            "_id": "62bcdb88183b971f9f32689f",
-            "id": "62bcdb88183b971f9f32689f"
-          },
-          "work": {
-            "function": "Nurse",
-            "position": "Nurse Director",
-            "department": "Renal",
-            "_id": "62bcdb88183b971f9f32689e",
-            "id": "62bcdb88183b971f9f32689e"
-          },
-          "phone": {
-            "telephone_work": "05403 6360589",
-            "_id": "62bcdb88183b971f9f32689d",
-            "id": "62bcdb88183b971f9f32689d"
-          }
-        },
-        "links": {
-          "self": "http://127.0.0.1:3000/staff/62bcdb88183b971f9f32689c"
-        }
-      },
-      {
-        "id": "62bcdb88183b971f9f3268a2",
-        "type": "staff",
-        "attributes": {
-          "staff_data": {
-            "lastname": "Baloun",
-            "firstnames": "David",
-            "form_of_address": "Mr.",
-            "birth_date": "1959-05-26T00:00:00.000Z",
-            "nationality": "British",
-            "_id": "62bcdb88183b971f9f3268a7",
-            "id": "62bcdb88183b971f9f3268a7"
-          },
-          "work": {
-            "profession": "dialysis support worker",
-            "function": "Nurse",
-            "_id": "62bcdb88183b971f9f3268a6",
-            "id": "62bcdb88183b971f9f3268a6"
-          },
-          "phone": {
-            "telephone_work": "05403 1350539",
-            "_id": "62bcdb88183b971f9f3268a5",
-            "id": "62bcdb88183b971f9f3268a5"
-          },
-          "address": {
-            "street": "60 Orchard Road",
-            "city_postcode": "ME 76Z89 Mount Everest",
-            "_id": "62bcdb88183b971f9f3268a4",
-            "id": "62bcdb88183b971f9f3268a4"
-          },
-          "ids": {
-            "staff_id_1": "23BE7263",
-            "staff_id_2": "AE3FF1",
-            "_id": "62bcdb88183b971f9f3268a3",
-            "id": "62bcdb88183b971f9f3268a3"
-          }
-        },
-        "links": {
-          "self": "http://127.0.0.1:3000/staff/62bcdb88183b971f9f3268a2"
-        }
-      },
-      {
-        "id": "62bcdb88183b971f9f3268a8",
-        "type": "staff",
-        "attributes": {
-          "staff_data": {
-            "lastname": "Batenga",
-            "firstnames": "Mercy",
-            "form_of_address": "Mrs.",
-            "birth_date": "1964-04-25T00:00:00.000Z",
-            "nationality": "Indian",
-            "_id": "62bcdb88183b971f9f3268ad",
-            "id": "62bcdb88183b971f9f3268ad"
-          },
-          "work": {
-            "profession": "Nurse",
-            "function": "Nurse",
-            "_id": "62bcdb88183b971f9f3268ac",
-            "id": "62bcdb88183b971f9f3268ac"
-          },
-          "phone": {
-            "telephone_work": "05403 1665359",
-            "_id": "62bcdb88183b971f9f3268ab",
-            "id": "62bcdb88183b971f9f3268ab"
-          },
-          "address": {
-            "street": "62 Orchard Road",
-            "city_postcode": "ME 76Z89 Mount Everest",
-            "_id": "62bcdb88183b971f9f3268aa",
-            "id": "62bcdb88183b971f9f3268aa"
-          },
-          "ids": {
-            "staff_id_1": "11FF2088",
-            "staff_id_2": "CC1CC2",
-            "_id": "62bcdb88183b971f9f3268a9",
-            "id": "62bcdb88183b971f9f3268a9"
-          }
-        },
-        "links": {
-          "self": "http://127.0.0.1:3000/staff/62bcdb88183b971f9f3268a8"
-        }
-      },
-      {
-        "id": "62bcdb88183b971f9f3268ae",
-        "type": "staff",
-        "attributes": {
-          "staff_data": {
-            "lastname": "Challinor",
-            "firstnames": "Randi",
-            "form_of_address": "Mr.",
-            "birth_date": "1973-06-28T00:00:00.000Z",
-            "nationality": "British",
-            "_id": "62bcdb88183b971f9f3268b3",
-            "id": "62bcdb88183b971f9f3268b3"
-          },
-          "work": {
-            "profession": "Senior Dialysis Nurse",
-            "function": "Nurse",
-            "_id": "62bcdb88183b971f9f3268b2",
-            "id": "62bcdb88183b971f9f3268b2"
-          },
-          "phone": {
-            "telephone_work": "05401 9731214",
-            "_id": "62bcdb88183b971f9f3268b1",
-            "id": "62bcdb88183b971f9f3268b1"
-          },
-          "address": {
-            "street": "61 Orchard Road",
-            "city_postcode": "ME 76Z89 Mount Everest",
-            "_id": "62bcdb88183b971f9f3268b0",
-            "id": "62bcdb88183b971f9f3268b0"
-          },
-          "ids": {
-            "staff_id_1": "98AF3212",
-            "staff_id_2": "AC12AF43",
-            "_id": "62bcdb88183b971f9f3268af",
-            "id": "62bcdb88183b971f9f3268af"
-          }
-        },
-        "links": {
-          "self": "http://127.0.0.1:3000/staff/62bcdb88183b971f9f3268ae"
-        }
-      },
-      {
-        "id": "62bcdb88183b971f9f3268b4",
-        "type": "staff",
-        "attributes": {
-          "staff_data": {
-            "lastname": "Conception",
-            "firstnames": "Patience",
-            "form_of_address": "Mrs.",
-            "birth_date": "1976-04-03T00:00:00.000Z",
-            "nationality": "British",
-            "_id": "62bcdb88183b971f9f3268b9",
-            "id": "62bcdb88183b971f9f3268b9"
-          },
-          "work": {
-            "profession": "Nurse",
-            "function": "Nurse",
-            "_id": "62bcdb88183b971f9f3268b8",
-            "id": "62bcdb88183b971f9f3268b8"
-          },
-          "phone": {
-            "telephone_work": "05408 6126182",
-            "_id": "62bcdb88183b971f9f3268b7",
-            "id": "62bcdb88183b971f9f3268b7"
-          },
-          "address": {
-            "street": "32 Peanuts Road",
-            "city_postcode": "ME 76Z89 Mount Everest",
-            "_id": "62bcdb88183b971f9f3268b6",
-            "id": "62bcdb88183b971f9f3268b6"
-          },
-          "ids": {
-            "staff_id_1": "66CD1212",
-            "staff_id_2": "CD12DC67",
-            "_id": "62bcdb88183b971f9f3268b5",
-            "id": "62bcdb88183b971f9f3268b5"
-          }
-        },
-        "links": {
-          "self": "http://127.0.0.1:3000/staff/62bcdb88183b971f9f3268b4"
-        }
-      },
-      {
-        "id": "62bcdb88183b971f9f3268ba",
-        "type": "staff",
-        "attributes": {
-          "staff_data": {
-            "lastname": "Dixon",
-            "firstnames": "Kathryn",
-            "form_of_address": "Ms.",
-            "birth_date": "1957-07-08T00:00:00.000Z",
-            "nationality": "British",
-            "_id": "62bcdb88183b971f9f3268bf",
-            "id": "62bcdb88183b971f9f3268bf"
-          },
-          "work": {
-            "profession": "Nurse",
-            "function": "Nurse",
-            "_id": "62bcdb88183b971f9f3268be",
-            "id": "62bcdb88183b971f9f3268be"
-          },
-          "phone": {
-            "telephone_work": "05408 1112121",
-            "_id": "62bcdb88183b971f9f3268bd",
-            "id": "62bcdb88183b971f9f3268bd"
-          },
-          "address": {
-            "street": "98 Peanuts Road",
-            "city_postcode": "ME 76Z89 Mount Everest",
-            "_id": "62bcdb88183b971f9f3268bc",
-            "id": "62bcdb88183b971f9f3268bc"
-          },
-          "ids": {
-            "staff_id_1": "96AC21AA73",
-            "staff_id_2": "AF61DE",
-            "_id": "62bcdb88183b971f9f3268bb",
-            "id": "62bcdb88183b971f9f3268bb"
-          }
-        },
-        "links": {
-          "self": "http://127.0.0.1:3000/staff/62bcdb88183b971f9f3268ba"
-        }
-      },
-      {
-        "id": "62bcdb88183b971f9f3268c0",
-        "type": "staff",
-        "attributes": {
-          "staff_data": {
-            "lastname": "Jonas",
-            "firstnames": "Lisa",
-            "form_of_address": "Mrs.",
-            "birth_date": "1987-12-16T00:00:00.000Z",
-            "nationality": "British",
-            "title_": "Dr.",
-            "_id": "62bcdb88183b971f9f3268c5",
-            "id": "62bcdb88183b971f9f3268c5"
-          },
-          "work": {
-            "profession": "Physician",
-            "function": "Doctor",
-            "_id": "62bcdb88183b971f9f3268c4",
-            "id": "62bcdb88183b971f9f3268c4"
-          },
-          "phone": {
-            "telephone_work": "05403 7283621",
-            "_id": "62bcdb88183b971f9f3268c3",
-            "id": "62bcdb88183b971f9f3268c3"
-          },
-          "address": {
-            "street": "13 Peanuts Road",
-            "city_postcode": "ME 76Z89 Mount Everest",
-            "_id": "62bcdb88183b971f9f3268c2",
-            "id": "62bcdb88183b971f9f3268c2"
-          },
-          "ids": {
-            "staff_id_1": "53DE19EC",
-            "staff_id_2": "CE22DA",
-            "_id": "62bcdb88183b971f9f3268c1",
-            "id": "62bcdb88183b971f9f3268c1"
-          }
-        },
-        "links": {
-          "self": "http://127.0.0.1:3000/staff/62bcdb88183b971f9f3268c0"
-        }
+        ]
       }
     ]
   },
-  "staff": [
-    {
-      "staff_mgmt": {
-        "staff_data": {
-          "lastname": "Super Toll",
-          "firstnames": "Tobias"
-        },
-        "ids": {
-          "staff_id_1": "123456",
-          "staff_id_2": "ABCD"
-        }
+  "medication_form_schema": {
+    "type": "object",
+    "properties": {
+      "active": {
+        "type": "string",
+        "enum": [
+          "active",
+          "obsolete"
+        ]
       },
-      "id": 4
-    },
-    {
-      "staff_mgmt": {
-        "staff_data": {
-          "lastname": "Mustermann",
-          "firstnames": "Peter"
-        },
-        "ids": {
-          "staff_id_1": "785642",
-          "staff_id_2": "BCEF"
-        },
-        "phone": {
-          "telephone_work": "977643"
-        }
+      "atc_code": {
+        "title": "Atc code",
+        "type": "string",
+        "minLength": 1
       },
-      "id": 5
-    },
-    {
-      "staff_mgmt": {
-        "staff_data": {
-          "lastname": "Abc",
-          "firstnames": "Peter",
-          "form_of_address": "Dr. med."
-        },
-        "ids": {
-          "staff_id_1": "785642",
-          "staff_id_2": "BCEF"
-        },
-        "phone": {
-          "telephone_work": "977643"
-        }
+      "category": {
+        "type": "string"
       },
-      "id": 6
-    },
-    {
-      "staff_mgmt": {
-        "staff_data": {
-          "lastname": "test",
-          "firstnames": "Arzt",
-          "form_of_address": "Dr.",
-          "user_name": "testuser12"
-        }
+      "dosing_str": {
+        "title": "Dosing strength",
+        "type": "number"
       },
-      "id": 7
-    },
-    {
-      "staff_mgmt": {
-        "staff_data": {
-          "lastname": "Toll",
-          "firstnames": "Tobias"
-        },
-        "ids": {
-          "staff_id_1": "123456",
-          "staff_id_2": "ABCD"
-        }
+      "dosing_unit": {
+        "title": "Dosing unit",
+        "type": "string",
+        "enum": [
+          "mg",
+          "ug"
+        ]
       },
-      "id": 1
-    },
-    {
-      "staff_mgmt": {
-        "staff_data": {
-          "lastname": "ABC",
-          "firstnames": "XYZA"
-        }
+      "manufacturer": {
+        "type": "string"
       },
-      "id": 8
-    },
-    {
-      "staff_mgmt": {
-        "staff_data": {
-          "lastname": "e"
-        }
+      "nat_code": {
+        "title": "National code",
+        "type": "string"
       },
-      "id": 9
-    },
-    {
-      "id": 10,
-      "staff_mgmt": {
-        "staff_data": {
-          "lastname": "hh"
-        }
-      }
-    },
-    {
-      "id": 11,
-      "staff_mgmt": {
-        "staff_data": {
-          "lastname": "kk"
-        }
-      }
-    },
-    {
-      "staff_mgmt": {
-        "staff_data": {
-          "lastname": "hhsa"
-        }
+      "package_data": {
+        "title": "Package data",
+        "type": "integer"
       },
-      "id": 12
-    }
-  ],
-  "data_alt": {
-    "staff_mgmt": {
-      "staff_data": {
-        "lastname": "Carla",
-        "firstnames": "A"
+      "prep_form": {
+        "title": "Preparation form",
+        "type": "string",
+        "enum": [
+          "capsule",
+          "pre-filled syringe",
+          "tablet",
+          "ampule"
+        ]
+      },
+      "remarks": {
+        "type": "string"
+      },
+      "trade_name": {
+        "title": "Trade Name",
+        "type": "string",
+        "minLength": 1
       }
     }
   },
-  "data_format": [
-    {
-      "Header": "Lastname",
-      "accessor": "lastname"
+  "notification_schema": {
+    "type": "object",
+    "properties": {
+      "allow_repetition": {
+        "title": "Allow repetition",
+        "type": "boolean"
+      },
+      "category_name": {
+        "title": "Category Name",
+        "type": "string",
+        "minLength": 1
+      },
+      "color": {
+        "type": "string",
+        "enum": [
+          "dark blue",
+          "dark green",
+          "white",
+          "red",
+          "magenta",
+          "yellow",
+          "cyan",
+          "green",
+          "blue"
+        ]
+      },
+      "comments": {
+        "type": "string"
+      },
+      "needs_confirmation": {
+        "title": "Needs confirmation",
+        "type": "boolean"
+      },
+      "pass_to_monitoring": {
+        "title": "Pass to monitoring",
+        "type": "boolean"
+      },
+      "notifications_type": {
+        "type": "string",
+        "enum": [
+          "message",
+          "comment"
+        ]
+      },
+      "used_for_monitoring_comments": {
+        "title": "Used for monitoring comments",
+        "type": "boolean"
+      }
     },
-    {
-      "Header": "Firstname(s)",
-      "accessor": "firstnames"
-    },
-    {
-      "Header": "Form of Address",
-      "accessor": "form_of_address"
-    },
-    {
-      "Header": "Title",
-      "accessor": "title_"
-    },
-    {
-      "Header": "Birth Date",
-      "accessor": "birth_date"
-    },
-    {
-      "Header": "Nationality",
-      "accessor": "nationality"
-    },
-    {
-      "Header": "User Name",
-      "accessor": "user_name"
-    },
-    {
-      "Header": "Street",
-      "accessor": "street"
-    },
-    {
-      "Header": "City/Postcode",
-      "accessor": "city_postcode"
-    },
-    {
-      "Header": "State/Country",
-      "accessor": "State_Country"
-    },
-    {
-      "Header": "Staff-ID 1",
-      "accessor": "staff_id_1"
-    },
-    {
-      "Header": "Staff-ID 2",
-      "accessor": "staff_id_2"
-    },
-    {
-      "Header": "Profession",
-      "accessor": "profession"
-    },
-    {
-      "Header": "Function",
-      "accessor": "function"
-    },
-    {
-      "Header": "Position",
-      "accessor": "position"
-    },
-    {
-      "Header": "Department",
-      "accessor": "department"
-    },
-    {
-      "Header": "Telephone Work",
-      "accessor": "telephone_work"
-    },
-    {
-      "Header": "Telephone Private 1",
-      "accessor": "telephone_private_1"
-    },
-    {
-      "Header": "Telephone Private 2",
-      "accessor": "telephone_private_2"
-    },
-    {
-      "Header": "Fax",
-      "accessor": "fax"
-    },
-    {
-      "Header": "Comments",
-      "accessor": "comments"
+    "required": [
+      "notifications_type"
+    ]
+  },
+  "medication_uischema": {
+    "type": "VerticalLayout",
+    "label": "Medications Catalog",
+    "elements": [
+      {
+        "type": "VerticalLayout",
+        "elements": [
+          {
+            "type": "HorizontalLayout",
+            "elements": [
+              {
+                "type": "Control",
+                "scope": "#/properties/trade_name"
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/manufacturer"
+              }
+            ]
+          },
+          {
+            "type": "HorizontalLayout",
+            "elements": [
+              {
+                "type": "Control",
+                "scope": "#/properties/category"
+              },
+              {
+                "type": "HorizontalLayout",
+                "elements": [
+                  {
+                    "type": "Control",
+                    "scope": "#/properties/nat_code"
+                  },
+                  {
+                    "type": "Control",
+                    "scope": "#/properties/atc_code"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "HorizontalLayout",
+            "elements": [
+              {
+                "type": "HorizontalLayout",
+                "elements": [
+                  {
+                    "type": "Control",
+                    "scope": "#/properties/package_data"
+                  },
+                  {
+                    "type": "Control",
+                    "scope": "#/properties/prep_form"
+                  }
+                ]
+              },
+              {
+                "type": "HorizontalLayout",
+                "elements": [
+                  {
+                    "type": "Control",
+                    "scope": "#/properties/dosing_str"
+                  },
+                  {
+                    "type": "Control",
+                    "scope": "#/properties/dosing_unit"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "HorizontalLayout",
+            "elements": [
+              {
+                "type": "Control",
+                "scope": "#/properties/remarks"
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/active",
+                "options": {
+                  "format": "radio"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "notification_uischema": {
+    "type": "VerticalLayout",
+    "label": "Notification Categories",
+    "elements": [
+      {
+        "type": "VerticalLayout",
+        "elements": [
+          {
+            "type": "Control",
+            "scope": "#/properties/category_name"
+          },
+          {
+            "type": "HorizontalLayout",
+            "elements": [
+              {
+                "type": "Control",
+                "scope": "#/properties/color"
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/notifications_type"
+              }
+            ]
+          },
+          {
+            "type": "HorizontalLayout",
+            "elements": [
+              {
+                "type": "Control",
+                "scope": "#/properties/needs_confirmation",
+                "rule": {
+                  "effect": "DISABLE",
+                  "condition": {
+                    "scope": "#/properties/type",
+                    "schema": {
+                      "const": "message"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/allow_repetition",
+                "rule": {
+                  "effect": "DISABLE",
+                  "condition": {
+                    "scope": "#/properties/notifications_type",
+                    "schema": {
+                      "const": "comment"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/pass_to_monitoring"
+              },
+              {
+                "type": "Control",
+                "scope": "#/properties/used_for_monitoring_comments",
+                "rule": {
+                  "effect": "DISABLE",
+                  "condition": {
+                    "scope": "#/properties/type",
+                    "schema": {
+                      "const": "message"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/comments"
+          }
+        ]
+      }
+    ]
+  },
+  "shift_schema": {
+    "type": "object",
+    "properties": {
+      "shift_name": {
+        "title": "Shift name",
+        "type": "string"
+      },
+      "center": {
+        "title": "Center",
+        "type": "string",
+        "enum": [
+          "B. Brown",
+          "C. Brown"
+        ],
+        "dependentComponent": {
+          "ward": {
+            "title": "Ward",
+            "type": "string"
+          }
+        },
+        "dependentEnum": {
+          "B. Brown": [
+            "Ward 1",
+            "Ward 2",
+            "Ward 3"
+          ],
+          "C. Brown": [
+            "Ward A",
+            "Ward B"
+          ]
+        }
+      },
+      "shift_start": {
+        "title": "Shift start time",
+        "type": "string",
+        "format": "time"
+      },
+      "shift_end": {
+        "title": "Shift end time",
+        "type": "string",
+        "format": "time"
+      },
+      "comments": {
+        "title": "Comments",
+        "type": "string"
+      },
+      "weekdays": {
+        "type": "array",
+        "title": "Weekdays",
+        "uniqueItems": true,
+        "items": {
+          "type": "string",
+          "enum": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ]
+        }
+      }
     }
-  ]
+  },
+  "shift_uischema": {
+    "type": "VerticalLayout",
+    "label": "Shift",
+    "elements": [
+      {
+        "type": "Control",
+        "scope": "#/properties/ward"
+      }
+    ]
+  }
 }
